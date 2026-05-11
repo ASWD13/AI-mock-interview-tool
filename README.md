@@ -1,4 +1,4 @@
-# iphipi — AI Mock Interview Platform
+# InterviewPrep — AI Mock Interview Platform
 
 AI-powered mock interview platform that parses resumes, conducts adaptive multi-round interviews with audio and visual intelligence, evaluates performance across multiple dimensions, and generates coaching feedback with job recommendations.
 
