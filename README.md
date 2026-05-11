@@ -119,7 +119,7 @@ Navigate to `http://localhost:3000` to start your mock interview!
 
 ---
 
-## 💡 Hackathon Highlights & Talking Points
+## 💡Highlights & Talking Points
 
 - **Stateful Orchestration over Chatbots:** Unlike a standard LLM wrapper that forgets context, InterviewPrep maintains a rigid Finite State Machine. It tracks rolling metrics (confidence, technical score, topics visited) to make deterministic decisions about when to escalate difficulty or gracefully shift topics.
 - **Latency-Obsessed Design:** Live voice interviews feel unnatural with high latency. We separated evaluation into a "Fast-Path" (keyword extraction + audio heuristics) that unblocks the UI instantly, and a "Slow-Path" (deep LLM analysis) that updates the final score asynchronously. 
