@@ -1,4 +1,4 @@
-# 🎙️ iphipi — The Intelligent AI Mock Interview Platform
+# 🎙️ InterviewPrep — The Intelligent AI Mock Interview Platform
 
 
 [![Next.js](https://img.shields.io/badge/Next.js-14-black)](https://nextjs.org/)
@@ -6,7 +6,7 @@
 [![Groq](https://img.shields.io/badge/Powered%20by-Groq-F55036?style=flat)](https://groq.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**iphipi** is a next-generation, AI-powered mock interview platform designed to provide an ultra-realistic, adaptive interview experience. It goes beyond generic chatbots by parsing your resume, understanding your background, conducting a live audio-interactive interview, and adapting the difficulty of its questions in real-time based on your answers and confidence.
+**InterviewPrep** is a next-generation, AI-powered mock interview platform designed to provide an ultra-realistic, adaptive interview experience. It goes beyond generic chatbots by parsing your resume, understanding your background, conducting a live audio-interactive interview, and adapting the difficulty of its questions in real-time based on your answers and confidence.
 
 ---
 
@@ -121,7 +121,7 @@ Navigate to `http://localhost:3000` to start your mock interview!
 
 ## 💡 Hackathon Highlights & Talking Points
 
-- **Stateful Orchestration over Chatbots:** Unlike a standard LLM wrapper that forgets context, iphipi maintains a rigid Finite State Machine. It tracks rolling metrics (confidence, technical score, topics visited) to make deterministic decisions about when to escalate difficulty or gracefully shift topics.
+- **Stateful Orchestration over Chatbots:** Unlike a standard LLM wrapper that forgets context, InterviewPrep maintains a rigid Finite State Machine. It tracks rolling metrics (confidence, technical score, topics visited) to make deterministic decisions about when to escalate difficulty or gracefully shift topics.
 - **Latency-Obsessed Design:** Live voice interviews feel unnatural with high latency. We separated evaluation into a "Fast-Path" (keyword extraction + audio heuristics) that unblocks the UI instantly, and a "Slow-Path" (deep LLM analysis) that updates the final score asynchronously. 
 - **Multimodal Heuristics:** We don't just judge *what* you say, but *how* you say it. By piping audio through `librosa` before transcription, we measure RMS energy (confidence) and zero-crossing rates (hesitation) to give nuanced behavioral feedback.
 
